@@ -1,0 +1,132 @@
+/* 全局自定义样式 */
+
+/* 联系卡片动画 */
+.contact-card {
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .wechat-info {
+    font-size: 16px;
+  }
+  .copy-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+}
+
+/* SEO友好 - 内容区域优化 */
+.vp-doc {
+  line-height: 1.8;
+}
+
+/* 表格优化 */
+.vp-doc table {
+  width: 100%;
+  margin: 1rem 0;
+  border-collapse: collapse;
+}
+
+.vp-doc th, .vp-doc td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+/* 链接样式优化 */
+.vp-doc a {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.vp-doc a:hover {
+  border-bottom-width: 2px;
+}
+
+/* 列表优化 */
+.vp-doc ul, .vp-doc ol {
+  padding-left: 1.5rem;
+}
+
+.vp-doc li {
+  margin: 0.5rem 0;
+}
+
+/* 标题锚点优化 - SEO友好 */
+.vp-doc h1 .vp-doc h2, .vp-doc h3, .vp-doc h4 {
+  scroll-margin-top: 80px;
+}
+
+/* 面包屑样式 */
+.breadcrumb {
+  font-size: 14px;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dark .breadcrumb {
+  border-bottom-color: #374151;
+}
+
+/* 页脚优化 */
+.VPFooter {
+  padding: 24px !important;
+}
+
+/* 内容区域最大宽度优化 */
+.VPDoc .content-container {
+  max-width: 100%;
+}
+
+/* 移动端表格滚动 */
+@media (max-width: 768px) {
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* 打印优化 */
+@media print {
+  .VPNav, .VPSidebar, .VPFooter {
+    display: none !important;
+  }
+  
+  .VPDoc {
+    padding: 0 !important;
+  }
+}
+
+/* 无障碍优化 - 焦点状态 */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* 暗黑模式优化 */
+.dark {
+  color-scheme: dark;
+}
+
+/* 跳转到主内容 - 无障碍 */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
