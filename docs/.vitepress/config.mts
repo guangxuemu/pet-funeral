@@ -148,7 +148,7 @@ export default defineConfig({
     hostname: 'https://www.cwbzxxw.com'
   },
   
-  cleanUrls: true,
+  cleanUrls: false,
   lastUpdated: true,
   ignoreDeadLinks: true
 })

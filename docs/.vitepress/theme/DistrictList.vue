@@ -993,7 +993,7 @@ const getDistrictLink = (district) => {
     const province = parts[1]
     const city = parts[2]
     // 链接格式：/cities/省份/城市/区县宠物火化服务.html
-    return `/cities/${province}/${city}/${encodeURIComponent(`${district}宠物火化服务`)}`
+    return `/cities/${province}/${city}/${encodeURIComponent(`${district}宠物火化服务`)}.html`
   }
   
   return '#'
